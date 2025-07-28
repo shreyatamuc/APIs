@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prompt + TXT Merge</title>
+</head>
+<body>
+  <h2>Upload .txt File and Enter Prompt</h2>
+  <form id="mergeForm" enctype="multipart/form-data">
+    <label for="prompt">Enter Prompt:</label><br>
+    <textarea name="prompt" rows="4" cols="50"></textarea><br><br>
+
+    <label for="file">Upload .txt File:</label>
+    <input type="file" name="file" accept=".txt"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Response:</h3>
+  <pre id="responseOutput"></pre>
+
+  <script>
+    document.getElementById('mergeForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+
+      const response = await fetch('http://localhost:5000/merge', {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await response.json();
+      document.getElementById('responseOutput').textContent = data.merged_text;
+    });
+  </script>
+</body>
+</html>
