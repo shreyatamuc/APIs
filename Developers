@@ -1,0 +1,33 @@
+Absolutely — here’s a **shortened bullet-style version** of what developers think about **REST APIs**, perfect for slides, quick briefs, or speaking points:
+
+---
+
+## ✅ Why Developers Like REST APIs
+
+* 🌐 **Universal standard** — works with any frontend or platform.
+* 🧠 **Easy to learn** — uses familiar HTTP methods (GET, POST, etc.).
+* ⚙️ **Lightweight** — no extra libraries needed.
+* 📈 **Scalable** — stateless nature allows load balancing and caching.
+* 🔧 **Flexible** — can be built in any language or framework.
+
+---
+
+## ⚠️ Common Developer Complaints
+
+* ❓ **Ambiguous design** — debates over when to use 200 vs 204, GET vs POST.
+* 📚 **Docs can get messy** — large APIs need strong versioning and maintenance.
+* 🐢 **Over-fetching** — sometimes pulls more data than needed.
+* 🔁 **Not real-time** — REST isn't suited for live updates or streaming.
+* 🧩 **Too many endpoints** — complex APIs can get bloated fast.
+
+---
+
+## 🗣️ Reddit Highlights
+
+> “REST is simple, but you have to design it right.”
+> “Auto docs and validation are missing — that’s why we use tools like FastAPI.”
+> “Great for CRUD, not for pushing data or chat apps.”
+
+---
+
+Let me know if you want this turned into a slide or exported as Markdown/PDF!
